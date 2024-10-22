@@ -1,0 +1,5 @@
+model_v2.h5
+data/
+__pycache__/
+*.pyc
+*.pyo
