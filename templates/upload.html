@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI or Real - Image Classifier</title>
+    <!-- Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        h1 {
+            color: #343a40;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        .upload-box {
+            border: 2px dashed #6c757d;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+        .upload-box:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .btn-upload {
+            margin-top: 20px;
+            background-color: #4a90e2;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .btn-upload:hover {
+            background-color: #357abd;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI or Real?</h1>
+        <p class="lead">Upload an image to check if it's real or AI-generated</p>
+
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="upload-box">
+                <input type="file" name="file" accept="image/*" required class="form-control">
+            </div>
+            <button type="submit" class="btn-upload">Analyze Image</button>
+        </form>
+
+        <div class="footer">
+            <p>&copy; 2024 Image Classifier | <a href="#">About</a> | <a href="#">Contact</a> | <a href="#">GitHub</a></p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS for interactivity -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
